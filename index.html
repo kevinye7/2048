@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>2048</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="2048.css">
+        <script src="2048.js"></script>
+    </head>
+    <body>
+        <h1>2048</h1>
+        <div class="points">
+            <div class="score">
+                SCORE<span id="scoreNum">0</span>
+            </div>
+            <div class="bestScore">
+                BEST<span id="bestScoreNum">0</span>
+            </div>
+        </div>
+        <div>
+            <button class="newGame" onClick="newGame()">New Game</button>
+        </div>
+        <br>
+        <div id="gameBoard">
+            <div id="white" hidden></div>
+            <div id="gameOver" hidden>Game over!</div>
+            <button id="tryAgain" onClick="again()" hidden>Try again</button>
+        </div>
+    </body>
+</html>
